@@ -1,19 +1,19 @@
 {
   "meta": {
     "title": "Eva | Música, Biografia i Vídeos",
-    "description": "Web oficial d’Eva: biografia, música, vídeos i contacte."
+    "description": "Web oficial de l'Eva: biografia, música, vídeos, esdeveniments i contacte."
   },
   "header": {
-    "homeAria": "Anar a Inici",
-    "logoAlt": "Logotip d'Eva",
+    "homeAria": "Anar a l'inici",
+    "logoAlt": "Logotip de l'Eva",
     "openMenuAria": "Obrir menú",
     "language": "Idioma"
   },
   "nav": {
     "home": "Inici",
     "biography": "Biografia",
-    "music": "Música",
     "videos": "Vídeos",
+    "events": "Esdeveniments",
     "contact": "Contacte"
   },
   "hero": {
@@ -26,97 +26,109 @@
   },
   "biography": {
     "eyebrow": "Biografia",
-    "title": "Trajectòria",
+    "title": "Trajectòria artística",
     "description": "El seu recorregut combina formació, presència escènica i reconeixement en diferents àmbits de la música jove.",
+    "imageAlt": "Eva - fotografia biogràfica",
     "items": [
       "Violí Jove Orquestra de Ponent",
-      "Acadèmica de l'orquestra Julià Carbonell",
+      "Academista de l'orquestra Julià Carbonell",
       "Violí Orquestra Simfònica de Catalunya",
       "Violí Orquestra Professional del Liceu",
-      "Violí Orquestra En Clave de Arts"
-    ],
-    "imageAlt": "Eva - fotografia biogràfica"
+      "Violí Orquestra En Clave de Arts",
+      "Combo Celta Arts Musicals"
+    ]
   },
   "awards": {
     "items": [
       {
         "imageAlt": "Mil Descobreix 2025",
-        "title": "Guanyadora Mil Descobreix 2025",
+        "title": "Guanyadora Mil Descobreix 2025 a Xàtiva, València",
         "description": "Reconeixement destacat dins l'àmbit dels joves talents."
       },
       {
         "imageAlt": "Premi de Piano Maestro Alonso",
-        "title": "Premi de Piano “Maestro Alonso” juliol 2024",
+        "title": "Premi de Piano “Maestro Alonso” juliol 2024 a El Escorial, Madrid",
         "description": "Guanyadora del primer premi de l'Asociación Legado Maestro Alonso per la interpretació de “Pilarcita”."
       },
       {
         "imageAlt": "Joves Creadors Liceu",
-        "title": "Premiada Joves Creadors Liceu 2024, 2025 i 2026",
+        "title": "Premiada a Joves Creadors Liceu tres anys consecutius: 2024, 2025 i 2026",
         "description": "Participació i reconeixement en el programa de joves creadors vinculat al Liceu."
       },
       {
         "imageAlt": "Joves Interprets Musicals",
-        "title": "Tercer premi per la seva interpretació vocal al concurs “Joves Interprets Musicals” d’Andorra",
-        "description": "Reconeixement obtingut al concurs de joves intèrprets musicals d’Andorra."
+        "title": "Tercer premi per la seva interpretació vocal al concurs “Joves Interprets Musicals” d'Andorra",
+        "description": "Reconeixement obtingut en el concurs de joves intèrprets musicals d'Andorra."
       },
       {
         "imageAlt": "Sant Anastasi 2026",
-        "title": "Menció d’honor Sant Anastasi 2026 en cant",
-        "description": "Reconeixement honorífic en l’especialitat de cant."
+        "title": "Menció d'honor Sant Anastasi 2026 en cant",
+        "description": "Reconeixement honorífic en l'especialitat de cant."
       },
       {
         "imageAlt": "Academica International Studies Song Competition 2026",
-        "title": "Primer premi a l’Academica International Studies Song Competition 2026",
+        "title": "Primer lloc a l'Academica International Studies Song Competition 2026",
         "description": "Premi internacional per la seva interpretació vocal."
       }
     ]
   },
-  "music": {
-    "eyebrow": "Música",
-    "title": "Univers musical",
-    "description": "Un espai per presentar repertori, composicions, gravacions i futurs llançaments. Aquí pots afegir fàcilment plataformes com YouTube, Spotify, SoundCloud o enllaços directes a actuacions.",
-    "items": [
-      {
-        "title": "Piano",
-        "description": "Interpretació, acompanyament i sensibilitat expressiva."
-      },
-      {
-        "title": "Violí",
-        "description": "Treball instrumental, presència escènica i musicalitat."
-      },
-      {
-        "title": "Cant",
-        "description": "Expressió vocal, projecció i interpretació artística."
-      },
-      {
-        "title": "Composició",
-        "description": "Creació pròpia amb identitat estètica i narrativa personal."
-      }
-    ],
-    "imageAlt": "Eva - música"
-  },
   "videos": {
     "eyebrow": "Vídeos",
-    "title": "Actuacions i contingut audiovisual",
-    "description": "Pots substituir aquests blocs per vídeos incrustats de YouTube o per miniatures enllaçades al teu canal.",
+    "title": "Actuacions",
+    "description": "Un viatge a través del lirisme, el jazz, el pop o el rock",
     "items": [
       {
-        "badge": "Vídeo 01",
-        "title": "Interpretació en directe",
-        "description": "Espai preparat per inserir una actuació destacada.",
+        "imageAlt": "Miniatura del vídeo 01",
+        "title": "El nen valent - autora Eva Montes",
+        "description": "CCX - Centre Cultural de Xàtiva",
         "link": "Veure vídeo"
       },
       {
-        "badge": "Vídeo 02",
-        "title": "Canal oficial",
-        "description": "Afegeix aquí el vídeo o l’enllaç principal del canal.",
-        "link": "Anar al canal"
+        "imageAlt": "Miniatura del vídeo 02",
+        "title": "Vittoria, mio core! (Giacomo Carissimi)",
+        "description": "Sant Anastasi 2026 - Teatre Enric Granados",
+        "link": "Veure vídeo"
       },
       {
-        "badge": "Vídeo 03",
-        "title": "Composició pròpia",
-        "description": "Presenta aquí una obra original o una gravació especial.",
-        "link": "Reproduir"
+        "imageAlt": "Miniatura del vídeo 03",
+        "title": "Flames - autora Eva Montes",
+        "description": "Auditori Fundació Conservatori Liceu",
+        "link": "Veure vídeo"
+      },
+      {
+        "imageAlt": "Miniatura del vídeo 04",
+        "title": "Escriurem - versió d'Eva Montes",
+        "description": "Teatre Escorxador Lleida",
+        "link": "Veure vídeo"
+      },
+      {
+        "imageAlt": "Miniatura del vídeo 05",
+        "title": "I Wanna Be Me - versió d'Eva Montes",
+        "description": "CCX - Centre Cultural de Xàtiva",
+        "link": "Veure vídeo"
+      },
+      {
+        "imageAlt": "Miniatura del vídeo 06",
+        "title": "Roxanne (Police) - versió d'Eva Montes",
+        "description": "Tocata Pub Lleida",
+        "link": "Veure vídeo"
+      }
+    ]
+  },
+  "events": {
+    "eyebrow": "Esdeveniments",
+    "title": "Pròxims esdeveniments",
+    "description": "Concerts, concursos, actuacions especials i properes cites artístiques.",
+    "items": [
+      {
+        "day": "20",
+        "month": "Jun",
+        "meta": "Lleida · 20 de juny",
+        "title": "Concert acústic",
+        "venue": "Plaça de la Paeria",
+        "description": "Festival de Música al Carrer 2026",
+        "badge": "El mes vinent",
+        "link": "Accés lliure"
       }
     ]
   },

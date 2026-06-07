@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Eva | Music, Biography and Videos",
-    "description": "Eva's official website: biography, music, videos and contact."
+    "description": "Eva's official website: biography, music, videos, events and contact."
   },
   "header": {
-    "homeAria": "Go to Home",
+    "homeAria": "Go to home",
     "logoAlt": "Eva logo",
     "openMenuAria": "Open menu",
     "language": "Language"
@@ -12,8 +12,8 @@
   "nav": {
     "home": "Home",
     "biography": "Biography",
-    "music": "Music",
     "videos": "Videos",
+    "events": "Events",
     "contact": "Contact"
   },
   "hero": {
@@ -26,104 +26,116 @@
   },
   "biography": {
     "eyebrow": "Biography",
-    "title": "Path",
-    "description": "Her journey combines training, stage presence and recognition across different areas of youth music.",
+    "title": "Artistic journey",
+    "description": "The artistic path combines training, stage presence and recognition in different areas of young music.",
+    "imageAlt": "Eva - biographical photo",
     "items": [
-      "Violin, Jove Orquestra de Ponent",
+      "Violin - Jove Orquestra de Ponent",
       "Academy member of the Julià Carbonell Orchestra",
-      "Violin, Symphonic Orchestra of Catalonia",
-      "Violin, Professional Orchestra of the Liceu",
-      "Violin, En Clave de Arts Orchestra"
-    ],
-    "imageAlt": "Eva - biography photograph"
+      "Violin - Catalonia Symphony Orchestra",
+      "Violin - Professional Orchestra of the Liceu",
+      "Violin - En Clave de Arts Orchestra",
+      "Arts Musicals Celtic Combo"
+    ]
   },
   "awards": {
     "items": [
       {
         "imageAlt": "Mil Descobreix 2025",
-        "title": "Mil Descobreix 2025 Winner",
+        "title": "Winner of Mil Descobreix 2025 in Xàtiva, Valencia",
         "description": "Outstanding recognition in the field of young talent."
       },
       {
         "imageAlt": "Maestro Alonso Piano Award",
-        "title": "“Maestro Alonso” Piano Award, July 2024",
-        "description": "Winner of the first prize from the Asociación Legado Maestro Alonso for the performance of “Pilarcita”."
+        "title": "“Maestro Alonso” Piano Award, July 2024 in El Escorial, Madrid",
+        "description": "Winner of the first prize of the Asociación Legado Maestro Alonso for the performance of “Pilarcita”."
       },
       {
         "imageAlt": "Joves Creadors Liceu",
-        "title": "Awarded at Joves Creadors Liceu 2024, 2025 and 2026",
+        "title": "Awarded at Joves Creadors Liceu for three consecutive years: 2024, 2025 and 2026",
         "description": "Participation and recognition in the young creators programme linked to the Liceu."
       },
       {
         "imageAlt": "Joves Interprets Musicals",
-        "title": "Third prize for her vocal performance at the “Joves Interprets Musicals” competition in Andorra",
-        "description": "Recognition obtained at Andorra’s young musical performers competition."
+        "title": "Third prize for the vocal performance in the “Joves Interprets Musicals” competition in Andorra",
+        "description": "Recognition obtained in the young music performers competition in Andorra."
       },
       {
         "imageAlt": "Sant Anastasi 2026",
-        "title": "Sant Anastasi 2026 Honourable Mention in Singing",
+        "title": "Honourable mention at Sant Anastasi 2026 in singing",
         "description": "Honorary recognition in the singing category."
       },
       {
         "imageAlt": "Academica International Studies Song Competition 2026",
-        "title": "First Place in the Academica International Studies Song Competition 2026",
-        "description": "International award for her vocal performance."
+        "title": "First place at the Academica International Studies Song Competition 2026",
+        "description": "International award for the vocal performance."
       }
     ]
   },
-  "music": {
-    "eyebrow": "Music",
-    "title": "Musical universe",
-    "description": "A space to showcase repertoire, compositions, recordings and future releases. You can easily add platforms such as YouTube, Spotify, SoundCloud or direct links to performances here.",
-    "items": [
-      {
-        "title": "Piano",
-        "description": "Performance, accompaniment and expressive sensitivity."
-      },
-      {
-        "title": "Violin",
-        "description": "Instrumental work, stage presence and musicality."
-      },
-      {
-        "title": "Singing",
-        "description": "Vocal expression, projection and artistic interpretation."
-      },
-      {
-        "title": "Composition",
-        "description": "Original creation with an aesthetic identity and personal narrative."
-      }
-    ],
-    "imageAlt": "Eva - music"
-  },
   "videos": {
     "eyebrow": "Videos",
-    "title": "Performances and audiovisual content",
-    "description": "You can replace these blocks with embedded YouTube videos or thumbnails linked to your channel.",
+    "title": "Performances",
+    "description": "A journey through lyricism, jazz, pop and rock",
     "items": [
       {
-        "badge": "Video 01",
-        "title": "Live performance",
-        "description": "Space ready to insert a featured performance.",
+        "imageAlt": "Video thumbnail 01",
+        "title": "El nen valent - written by Eva Montes",
+        "description": "CCX - Xàtiva Cultural Centre",
         "link": "Watch video"
       },
       {
-        "badge": "Video 02",
-        "title": "Official channel",
-        "description": "Add the main channel video or link here.",
-        "link": "Go to channel"
+        "imageAlt": "Video thumbnail 02",
+        "title": "Vittoria, mio core! (Giacomo Carissimi)",
+        "description": "Sant Anastasi 2026 - Enric Granados Theatre",
+        "link": "Watch video"
       },
       {
-        "badge": "Video 03",
-        "title": "Original composition",
-        "description": "Present an original work or a special recording here.",
-        "link": "Play"
+        "imageAlt": "Video thumbnail 03",
+        "title": "Flames - written by Eva Montes",
+        "description": "Liceu Conservatory Foundation Auditorium",
+        "link": "Watch video"
+      },
+      {
+        "imageAlt": "Video thumbnail 04",
+        "title": "Escriurem - cover by Eva Montes",
+        "description": "Escorxador Theatre, Lleida",
+        "link": "Watch video"
+      },
+      {
+        "imageAlt": "Video thumbnail 05",
+        "title": "I Wanna Be Me - cover by Eva Montes",
+        "description": "CCX - Xàtiva Cultural Centre",
+        "link": "Watch video"
+      },
+      {
+        "imageAlt": "Video thumbnail 06",
+        "title": "Roxanne (Police) - cover by Eva Montes",
+        "description": "Tocata Pub Lleida",
+        "link": "Watch video"
+      }
+    ]
+  },
+  "events": {
+    "eyebrow": "Events",
+    "title": "Upcoming events",
+    "description": "Concerts, competitions, special performances and upcoming artistic engagements.",
+    "items": [
+      {
+        "day": "20",
+        "month": "Jun",
+        "meta": "Lleida · 20 June",
+        "title": "Acoustic concert",
+        "venue": "Plaça de la Paeria",
+        "description": "Festival de Música al Carrer 2026",
+        "badge": "Next month",
+        "link": "Free entry"
       }
     ]
   },
   "contact": {
     "eyebrow": "Contact",
     "title": "Let's talk",
-    "description": "For collaborations, concerts, competitions, press or artistic proposals, you can add your contact details and social media here.",
+    "description": "For collaborations, concerts, competitions, press or artistic proposals, you can add your contact details and social channels here.",
     "email": "Send email",
     "youtube": "YouTube",
     "instagram": "Instagram"

@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Eva | Música, Biografía y Vídeos",
-    "description": "Web oficial de Eva: biografía, música, vídeos y contacto."
+    "description": "Web oficial de Eva: biografía, música, vídeos, eventos y contacto."
   },
   "header": {
-    "homeAria": "Ir a Inicio",
+    "homeAria": "Ir al inicio",
     "logoAlt": "Logo Eva",
     "openMenuAria": "Abrir menú",
     "language": "Idioma"
@@ -12,8 +12,8 @@
   "nav": {
     "home": "Inicio",
     "biography": "Biografía",
-    "music": "Música",
     "videos": "Vídeos",
+    "events": "Eventos",
     "contact": "Contacto"
   },
   "hero": {
@@ -28,30 +28,31 @@
     "eyebrow": "Biografía",
     "title": "Trayectoria",
     "description": "Su recorrido combina formación, presencia escénica y reconocimiento en distintos ámbitos de la música joven.",
+    "imageAlt": "Eva - fotografía biográfica",
     "items": [
       "Violín Jove Orquestra de Ponent",
       "Academista de la orquesta Julià Carbonell",
       "Violín Orquesta Sinfónica de Catalunya",
       "Violín Orquesta Profesional del Liceu",
-      "Violín Orquesta En Clave de Arts"
-    ],
-    "imageAlt": "Eva - fotografía biográfica"
+      "Violín Orquesta En Clave de Arts",
+      "Combo Celta Arts Musicals"
+    ]
   },
   "awards": {
     "items": [
       {
         "imageAlt": "Mil Descobreix 2025",
-        "title": "Ganadora Mil Descobreix 2025",
+        "title": "Ganadora Mil Descobreix 2025 Xàtiva, Valencia",
         "description": "Reconocimiento destacado dentro del ámbito de jóvenes talentos."
       },
       {
         "imageAlt": "Premio de Piano Maestro Alonso",
-        "title": "Premio de Piano “Maestro Alonso” Julio 2024",
+        "title": "Premio de Piano “Maestro Alonso” Julio 2024 en El Escorial, Madrid",
         "description": "Ganadora del primer premio de la Asociación Legado Maestro Alonso por la interpretación de “Pilarcita”."
       },
       {
         "imageAlt": "Joves Creadors Liceu",
-        "title": "Premiada Joves Creadors Liceu 2024, 2025 y 2026",
+        "title": "Premiada Joves Creadors Liceu tres años consecutivos 2024, 2025 y 2026",
         "description": "Participación y reconocimiento en el programa de jóvenes creadores vinculado al Liceu."
       },
       {
@@ -71,52 +72,63 @@
       }
     ]
   },
-  "music": {
-    "eyebrow": "Música",
-    "title": "Universo musical",
-    "description": "Un espacio para presentar repertorio, composiciones, grabaciones y futuros lanzamientos. Aquí puedes añadir fácilmente plataformas como YouTube, Spotify, SoundCloud o enlaces directos a actuaciones.",
-    "items": [
-      {
-        "title": "Piano",
-        "description": "Interpretación, acompañamiento y sensibilidad expresiva."
-      },
-      {
-        "title": "Violín",
-        "description": "Trabajo instrumental, presencia escénica y musicalidad."
-      },
-      {
-        "title": "Canto",
-        "description": "Expresión vocal, proyección e interpretación artística."
-      },
-      {
-        "title": "Composición",
-        "description": "Creación propia con identidad estética y narrativa personal."
-      }
-    ],
-    "imageAlt": "Eva - música"
-  },
   "videos": {
     "eyebrow": "Vídeos",
-    "title": "Actuaciones y contenido audiovisual",
-    "description": "Puedes sustituir estos bloques por vídeos embebidos de YouTube o por miniaturas enlazadas a tu canal.",
+    "title": "Actuaciones",
+    "description": "Un viaje a través del liricismo, el jazz, el pop o el rock",
     "items": [
       {
-        "badge": "Vídeo 01",
-        "title": "Interpretación en directo",
-        "description": "Espacio preparado para insertar una actuación destacada.",
+        "imageAlt": "Miniatura del vídeo 01",
+        "title": "El nen valent - autora Eva Montes",
+        "description": "CCX - Centre Cultural de Xàtiva",
         "link": "Ver vídeo"
       },
       {
-        "badge": "Vídeo 02",
-        "title": "Canal oficial",
-        "description": "Añade aquí el vídeo o enlace principal del canal.",
-        "link": "Ir al canal"
+        "imageAlt": "Miniatura del vídeo 02",
+        "title": "Vittoria, mio core! (Giacomo Carissimi)",
+        "description": "Sant Anastasi 2026 - Teatro Enric Granados",
+        "link": "Ver vídeo"
       },
       {
-        "badge": "Vídeo 03",
-        "title": "Composición propia",
-        "description": "Presenta aquí una obra original o una grabación especial.",
-        "link": "Reproducir"
+        "imageAlt": "Miniatura del vídeo 03",
+        "title": "Flames - autora Eva Montes",
+        "description": "Auditorio Fundació Conservatori Liceu",
+        "link": "Ver vídeo"
+      },
+      {
+        "imageAlt": "Miniatura del vídeo 04",
+        "title": "Escriurem - cover by Eva Montes",
+        "description": "Teatro Escorxador Lleida",
+        "link": "Ver vídeo"
+      },
+      {
+        "imageAlt": "Miniatura del vídeo 05",
+        "title": "I Wanna Be Me - cover by Eva Montes",
+        "description": "CCX - Centre Cultural de Xàtiva",
+        "link": "Ver vídeo"
+      },
+      {
+        "imageAlt": "Miniatura del vídeo 06",
+        "title": "Roxanne (Police) - cover by Eva Montes",
+        "description": "Tocata Pub Lleida",
+        "link": "Ver vídeo"
+      }
+    ]
+  },
+  "events": {
+    "eyebrow": "Eventos",
+    "title": "Próximos eventos",
+    "description": "Conciertos, concursos, actuaciones especiales y próximas citas artísticas.",
+    "items": [
+      {
+        "day": "20",
+        "month": "Jun",
+        "meta": "Lleida · 20 de junio",
+        "title": "Concierto acústico",
+        "venue": "Plaza de la Paeria",
+        "description": "Festival de Música al Carrer 2026",
+        "badge": "Próximo mes",
+        "link": "Acceso libre"
       }
     ]
   },
