@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "title": "Eva | Música, Biografía y Vídeos",
+    "description": "Web oficial de Eva: biografía, música, vídeos y contacto."
+  },
+  "header": {
+    "homeAria": "Ir a Inicio",
+    "logoAlt": "Logo Eva",
+    "openMenuAria": "Abrir menú",
+    "language": "Idioma"
+  },
+  "nav": {
+    "home": "Inicio",
+    "biography": "Biografía",
+    "music": "Música",
+    "videos": "Vídeos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "eyebrow": "Música · Interpretación · Creación",
+    "title": "Eva Montes",
+    "lead": "Una propuesta artística delicada, intensa y elegante, con una identidad contemporánea.",
+    "listen": "Escuchar",
+    "viewBiography": "Ver biografía",
+    "imageAlt": "Eva - imagen de inicio"
+  },
+  "biography": {
+    "eyebrow": "Biografía",
+    "title": "Trayectoria",
+    "description": "Su recorrido combina formación, presencia escénica y reconocimiento en distintos ámbitos de la música joven.",
+    "items": [
+      "Violín Jove Orquestra de Ponent",
+      "Academista de la orquesta Julià Carbonell",
+      "Violín Orquesta Sinfónica de Catalunya",
+      "Violín Orquesta Profesional del Liceu",
+      "Violín Orquesta En Clave de Arts"
+    ],
+    "imageAlt": "Eva - fotografía biográfica"
+  },
+  "awards": {
+    "items": [
+      {
+        "imageAlt": "Mil Descobreix 2025",
+        "title": "Ganadora Mil Descobreix 2025",
+        "description": "Reconocimiento destacado dentro del ámbito de jóvenes talentos."
+      },
+      {
+        "imageAlt": "Premio de Piano Maestro Alonso",
+        "title": "Premio de Piano “Maestro Alonso” Julio 2024",
+        "description": "Ganadora del primer premio de la Asociación Legado Maestro Alonso por la interpretación de “Pilarcita”."
+      },
+      {
+        "imageAlt": "Joves Creadors Liceu",
+        "title": "Premiada Joves Creadors Liceu 2024, 2025 y 2026",
+        "description": "Participación y reconocimiento en el programa de jóvenes creadores vinculado al Liceu."
+      },
+      {
+        "imageAlt": "Joves Interprets Musicals",
+        "title": "Tercer premio por su interpretación en voz del concurso “Joves Interprets Musicals” de Andorra",
+        "description": "Reconocimiento obtenido en el concurso de jóvenes intérpretes musicales de Andorra."
+      },
+      {
+        "imageAlt": "Sant Anastasi 2026",
+        "title": "Mención de honor Sant Anastasi 2026 en canto",
+        "description": "Reconocimiento honorífico en la especialidad de canto."
+      },
+      {
+        "imageAlt": "Academica International Studies Song Competition 2026",
+        "title": "Primer puesto en la Academica International Studies Song Competition 2026",
+        "description": "Premio internacional por su interpretación vocal."
+      }
+    ]
+  },
+  "music": {
+    "eyebrow": "Música",
+    "title": "Universo musical",
+    "description": "Un espacio para presentar repertorio, composiciones, grabaciones y futuros lanzamientos. Aquí puedes añadir fácilmente plataformas como YouTube, Spotify, SoundCloud o enlaces directos a actuaciones.",
+    "items": [
+      {
+        "title": "Piano",
+        "description": "Interpretación, acompañamiento y sensibilidad expresiva."
+      },
+      {
+        "title": "Violín",
+        "description": "Trabajo instrumental, presencia escénica y musicalidad."
+      },
+      {
+        "title": "Canto",
+        "description": "Expresión vocal, proyección e interpretación artística."
+      },
+      {
+        "title": "Composición",
+        "description": "Creación propia con identidad estética y narrativa personal."
+      }
+    ],
+    "imageAlt": "Eva - música"
+  },
+  "videos": {
+    "eyebrow": "Vídeos",
+    "title": "Actuaciones y contenido audiovisual",
+    "description": "Puedes sustituir estos bloques por vídeos embebidos de YouTube o por miniaturas enlazadas a tu canal.",
+    "items": [
+      {
+        "badge": "Vídeo 01",
+        "title": "Interpretación en directo",
+        "description": "Espacio preparado para insertar una actuación destacada.",
+        "link": "Ver vídeo"
+      },
+      {
+        "badge": "Vídeo 02",
+        "title": "Canal oficial",
+        "description": "Añade aquí el vídeo o enlace principal del canal.",
+        "link": "Ir al canal"
+      },
+      {
+        "badge": "Vídeo 03",
+        "title": "Composición propia",
+        "description": "Presenta aquí una obra original o una grabación especial.",
+        "link": "Reproducir"
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "Hablemos",
+    "description": "Para colaboraciones, conciertos, concursos, prensa o propuestas artísticas, puedes añadir aquí tus datos de contacto y redes.",
+    "email": "Enviar email",
+    "youtube": "YouTube",
+    "instagram": "Instagram"
+  },
+  "footer": {
+    "rights": "© 2026 Eva. Todos los derechos reservados."
+  }
+}
