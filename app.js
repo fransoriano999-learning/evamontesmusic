@@ -1,5 +1,6 @@
 const supportedLanguages = ['es', 'en', 'ca', 'fr'];
 const languageSwitcher = document.getElementById('languageSwitcher');
+const DEFAULT_LANGUAGE = 'es';
 
 function getNestedValue(obj, path) {
   return path.split('.').reduce((acc, part) => {
@@ -8,7 +9,7 @@ function getNestedValue(obj, path) {
   }, obj);
 }
 
-function applyTranslations(translations) {
+function applyTranslations(translations, lang) {
   document.querySelectorAll('[data-i18n]').forEach((element) => {
     const key = element.dataset.i18n;
     const value = getNestedValue(translations, key);
@@ -46,31 +47,76 @@ function applyTranslations(translations) {
     document.title = pageTitle;
   }
 
-  const currentHtmlLang = document.documentElement.lang;
-  if (supportedLanguages.includes(currentHtmlLang)) {
-    document.documentElement.lang = currentHtmlLang;
+  document.documentElement.lang = lang;
+  if (languageSwitcher) {
+    languageSwitcher.value = lang;
   }
 }
 
+async function fetchTranslations(language) {
+  const lang = supportedLanguages.includes(language) ? language : DEFAULT_LANGUAGE;
+  const candidatePaths = [
+    `./${lang}.json`,
+    `${lang}.json`,
+    `./lang/${lang}.json`,
+    `lang/${lang}.json`
+  ];
+
+  let lastError = null;
+
+  for (const path of candidatePaths) {
+    try {
+      const response = await fetch(path, { cache: 'no-cache' });
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status} while loading ${path}`);
+      }
+      return await response.json();
+    } catch (error) {
+      lastError = error;
+    }
+  }
+
+  throw lastError || new Error(`Unable to load translations for ${lang}`);
+}
+
 async function loadLanguage(language) {
-  const lang = supportedLanguages.includes(language) ? language : 'es';
+  const lang = supportedLanguages.includes(language) ? language : DEFAULT_LANGUAGE;
 
   try {
-    const response = await fetch(`${lang}.json`, { cache: 'no-cache' });
-    if (!response.ok) {
-      throw new Error(`Unable to load ${lang}.json`);
+    const translations = await fetchTranslations(lang);
+    applyTranslations(translations, lang);
+    localStorage.setItem('preferredLanguage', lang);
+    return true;
+  } catch (error) {
+    console.error(`Language loading error for "${lang}":`, error);
+
+    if (lang !== DEFAULT_LANGUAGE) {
+      try {
+        const fallbackTranslations = await fetchTranslations(DEFAULT_LANGUAGE);
+        applyTranslations(fallbackTranslations, DEFAULT_LANGUAGE);
+        localStorage.setItem('preferredLanguage', DEFAULT_LANGUAGE);
+        console.warn(`Fallback applied: ${DEFAULT_LANGUAGE}`);
+        return true;
+      } catch (fallbackError) {
+        console.error(`Fallback language loading error for "${DEFAULT_LANGUAGE}":`, fallbackError);
+      }
     }
 
-    const translations = await response.json();
-    applyTranslations(translations);
-    document.documentElement.lang = lang;
-    localStorage.setItem('preferredLanguage', lang);
-    if (languageSwitcher) {
-      languageSwitcher.value = lang;
-    }
-  } catch (error) {
-    console.error('Language loading error:', error);
+    return false;
   }
+}
+
+function detectInitialLanguage() {
+  const savedLanguage = localStorage.getItem('preferredLanguage');
+  if (savedLanguage && supportedLanguages.includes(savedLanguage)) {
+    return savedLanguage;
+  }
+
+  const browserLanguage = (navigator.language || navigator.userLanguage || DEFAULT_LANGUAGE)
+    .slice(0, 2)
+    .toLowerCase();
+
+  return supportedLanguages.includes(browserLanguage) ? browserLanguage : DEFAULT_LANGUAGE;
 }
 
 const navToggle = document.getElementById('nav-toggle');
@@ -88,7 +134,6 @@ if (languageSwitcher) {
   });
 }
 
-const browserLanguage = (navigator.language || 'es').slice(0, 2);
-const savedLanguage = localStorage.getItem('preferredLanguage');
-const initialLanguage = savedLanguage || (supportedLanguages.includes(browserLanguage) ? browserLanguage : 'es');
-loadLanguage(initialLanguage);
+document.addEventListener('DOMContentLoaded', () => {
+  loadLanguage(detectInitialLanguage());
+});
