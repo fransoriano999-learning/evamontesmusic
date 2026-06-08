@@ -1,129 +1,133 @@
 {
   "meta": {
     "title": "Eva | Musique, Biographie et Vidéos",
-    "description": "Site officiel d’Eva : biographie, musique, vidéos et contact."
+    "description": "Site officiel d’Eva : biographie, musique, vidéos, événements et contact."
   },
   "header": {
-    "homeAria": "Aller à l'accueil",
-    "logoAlt": "Logo Eva",
-    "openMenuAria": "Ouvrir le menu",
+    "homeAria": "Aller à l’accueil",
+    "logoAlt": "Logo d’Eva",
+    "openMenuAria": "Ouvrir le menu de navigation",
     "language": "Langue"
   },
   "nav": {
     "home": "Accueil",
     "biography": "Biographie",
-    "music": "Musique",
     "videos": "Vidéos",
+    "events": "Événements",
     "contact": "Contact"
   },
   "hero": {
-    "eyebrow": "Musique · Interprétation · Création",
+    "eyebrow": "Interprétation · Création · Voix",
     "title": "Eva Montes",
     "lead": "Une proposition artistique délicate, intense et élégante, avec une identité contemporaine.",
     "listen": "Écouter",
     "viewBiography": "Voir la biographie",
-    "imageAlt": "Eva - image d'accueil"
+    "imageAlt": "Eva - image d’accueil"
   },
   "biography": {
     "eyebrow": "Biographie",
-    "title": "Parcours",
-    "description": "Son parcours associe formation, présence scénique et reconnaissance dans différents domaines de la musique jeunesse.",
-    "items": [
-      "Violon, Jove Orquestra de Ponent",
-      "Membre académique de l'orchestre Julià Carbonell",
-      "Violon, Orchestre symphonique de Catalogne",
-      "Violon, Orchestre professionnel du Liceu",
-      "Violon, Orchestre En Clave de Arts"
-    ],
+    "title": "Talent Précoce",
+    "description": "Eva Montes commence sa formation musicale à l’âge de 6 ans avec le violon, révélant dès son plus jeune âge un talent remarquable qui l’amène, à 11 ans, à composer ses propres pièces. Sa capacité d’interprétation se distingue aussi bien au violon qu’au piano, ce qui fait d’elle une jeune musicienne d’une grande polyvalence. Au fil de son parcours, elle a intégré plusieurs formations orchestrales prestigieuses, telles que la Jove Orquestra de Ponent, l’Orquestra Julià Carbonell, l’Orchestre Symphonique des Jeunes de Catalogne et l’Orquestra En Clave de Arts, des expériences qui ont nourri son développement artistique et scénique. Dans le domaine de la création, elle a été récompensée pendant trois années consécutives par le prix de composition du concours Jeunes Créateurs du Liceu, consolidant son profil d’autrice émergente. En 2025, son talent de chanteuse-autrice-compositrice a également été reconnu au niveau national lorsqu’elle a remporté le prix Mil Descobreix à Xàtiva. En plus de son activité instrumentale et de composition, elle possède une expérience de scène dans l’interprétation de ses propres chansons, explorant une grande variété de styles allant de la pop au rock, en passant par le jazz et le lyrique, ce qui reflète sa grande sensibilité artistique et sa capacité d’adaptation.",
     "imageAlt": "Eva - photographie biographique"
   },
   "awards": {
     "items": [
       {
-        "imageAlt": "Mil Descobreix 2025",
-        "title": "Lauréate Mil Descobreix 2025",
-        "description": "Distinction remarquable dans le domaine des jeunes talents."
+        "title": "Lauréate du Mil Descobreix 2025 Xàtiva, Valence",
+        "description": "Reconnaissance remarquable dans le domaine des jeunes talents.",
+        "imageAlt": "Mil Descobreix 2025"
       },
       {
-        "imageAlt": "Prix de piano Maestro Alonso",
-        "title": "Prix de piano « Maestro Alonso », juillet 2024",
-        "description": "Lauréate du premier prix de l'Asociación Legado Maestro Alonso pour l'interprétation de « Pilarcita »."
+        "title": "Prix de piano « Maestro Alonso » juillet 2024 à El Escorial, Madrid",
+        "description": "Lauréate du premier prix de l’Association Legado Maestro Alonso pour l’interprétation de « Pilarcita ».",
+        "imageAlt": "Prix de piano Maestro Alonso"
       },
       {
-        "imageAlt": "Joves Creadors Liceu",
-        "title": "Récompensée au programme Joves Creadors Liceu 2024, 2025 et 2026",
-        "description": "Participation et reconnaissance dans le programme de jeunes créateurs lié au Liceu."
+        "title": "Récompensée au Joves Creadors Liceu trois années consécutives : 2024, 2025 et 2026",
+        "description": "Participation et reconnaissance dans le programme de jeunes créateurs lié au Liceu.",
+        "imageAlt": "Joves Creadors Liceu"
       },
       {
-        "imageAlt": "Joves Interprets Musicals",
         "title": "Troisième prix pour son interprétation vocale au concours « Joves Interprets Musicals » d’Andorre",
-        "description": "Reconnaissance obtenue au concours de jeunes interprètes musicaux d’Andorre."
+        "description": "Reconnaissance obtenue dans le concours andorran de jeunes interprètes musicaux.",
+        "imageAlt": "Joves Interprets Musicals"
       },
       {
-        "imageAlt": "Sant Anastasi 2026",
         "title": "Mention d’honneur Sant Anastasi 2026 en chant",
-        "description": "Distinction honorifique dans la spécialité chant."
+        "description": "Reconnaissance honorifique dans la spécialité chant.",
+        "imageAlt": "Sant Anastasi 2026"
       },
       {
-        "imageAlt": "Academica International Studies Song Competition 2026",
-        "title": "Premier prix à l’Academica International Studies Song Competition 2026",
-        "description": "Prix international pour son interprétation vocale."
+        "title": "Première place à l’Academica International Studies Song Competition 2026",
+        "description": "Prix international pour son interprétation vocale.",
+        "imageAlt": "Academica International Studies Song Competition 2026"
       }
     ]
   },
-  "music": {
-    "eyebrow": "Musique",
-    "title": "Univers musical",
-    "description": "Un espace pour présenter répertoire, compositions, enregistrements et futures sorties. Vous pouvez facilement y ajouter des plateformes comme YouTube, Spotify, SoundCloud ou des liens directs vers des prestations.",
-    "items": [
-      {
-        "title": "Piano",
-        "description": "Interprétation, accompagnement et sensibilité expressive."
-      },
-      {
-        "title": "Violon",
-        "description": "Travail instrumental, présence scénique et musicalité."
-      },
-      {
-        "title": "Chant",
-        "description": "Expression vocale, projection et interprétation artistique."
-      },
-      {
-        "title": "Composition",
-        "description": "Création originale avec une identité esthétique et une narration personnelle."
-      }
-    ],
-    "imageAlt": "Eva - musique"
-  },
   "videos": {
     "eyebrow": "Vidéos",
-    "title": "Prestations et contenu audiovisuel",
-    "description": "Vous pouvez remplacer ces blocs par des vidéos YouTube intégrées ou par des miniatures liées à votre chaîne.",
+    "title": "Prestations",
+    "description": "Un voyage à travers le lyrisme, le jazz, la pop et le rock",
     "items": [
       {
-        "badge": "Vidéo 01",
-        "title": "Interprétation en direct",
-        "description": "Espace prêt à accueillir une prestation mise en avant.",
-        "link": "Voir la vidéo"
+        "title": "El nen valent - autrice Eva Montes",
+        "description": "CCX - Centre Culturel de Xàtiva",
+        "link": "Voir la vidéo",
+        "imageAlt": "Miniature de la vidéo 01"
       },
       {
-        "badge": "Vidéo 02",
-        "title": "Chaîne officielle",
-        "description": "Ajoutez ici la vidéo principale ou le lien de la chaîne.",
-        "link": "Aller à la chaîne"
+        "title": "Vittoria, mio core! (Giacomo Carissimi)",
+        "description": "Sant Anastasi 2026 - Théâtre Enric Granados",
+        "link": "Voir la vidéo",
+        "imageAlt": "Miniature de la vidéo 02"
       },
       {
-        "badge": "Vidéo 03",
-        "title": "Composition originale",
-        "description": "Présentez ici une œuvre originale ou un enregistrement spécial.",
-        "link": "Lire"
+        "title": "Flames - autrice Eva Montes",
+        "description": "Auditorium Fundació Conservatori Liceu",
+        "link": "Voir la vidéo",
+        "imageAlt": "Miniature de la vidéo 03"
+      },
+      {
+        "title": "Escriurem - reprise par Eva Montes",
+        "description": "Théâtre Escorxador Lleida",
+        "link": "Voir la vidéo",
+        "imageAlt": "Miniature de la vidéo 04"
+      },
+      {
+        "title": "I Wanna Be Me - reprise par Eva Montes",
+        "description": "CCX - Centre Culturel de Xàtiva",
+        "link": "Voir la vidéo",
+        "imageAlt": "Miniature de la vidéo 05"
+      },
+      {
+        "title": "Roxanne (Police) - reprise par Eva Montes",
+        "description": "Tocata Pub Lleida",
+        "link": "Voir la vidéo",
+        "imageAlt": "Miniature de la vidéo 06"
+      }
+    ]
+  },
+  "events": {
+    "eyebrow": "Événements",
+    "title": "Prochains événements",
+    "description": "Concerts, concours, prestations spéciales et prochains rendez-vous artistiques.",
+    "items": [
+      {
+        "day": "20",
+        "month": "Juin",
+        "meta": "Lleida · 20 juin",
+        "title": "Concert acoustique",
+        "venue": "Plaça de la Paeria",
+        "description": "Festival Música al Carrer 2026",
+        "badge": "Le mois prochain",
+        "link": "Entrée libre"
       }
     ]
   },
   "contact": {
     "eyebrow": "Contact",
     "title": "Parlons-en",
-    "description": "Pour les collaborations, concerts, concours, presse ou propositions artistiques, vous pouvez ajouter ici vos coordonnées et réseaux sociaux.",
+    "description": "Pour des collaborations, concerts, concours, presse ou propositions artistiques, vous pouvez ajouter ici vos coordonnées et vos réseaux sociaux.",
     "email": "Envoyer un e-mail",
     "youtube": "YouTube",
     "instagram": "Instagram"
