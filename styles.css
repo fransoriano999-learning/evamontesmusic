@@ -107,13 +107,12 @@ img {
 }
 
 .language-switcher {
-  background: var(--surface);
-  background-color: rgba(255, 255, 255, 0.05); /* fondo suave */
-  color: var(--text);
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 0.65rem 0.95rem;
-  font: inherit;
+  background-color: #222;   /* COLOR DE FONDO */
+  color: #fff;              /* COLOR DEL TEXTO */
+  border: 1px solid #555;
+  padding: 0.3rem 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 .nav-toggle,
