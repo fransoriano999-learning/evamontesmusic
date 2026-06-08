@@ -242,8 +242,10 @@ h3 {
 }
 
 .awards-grid,
-.video-grid {
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+.video-grid {  
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
 }
 
 .card {
