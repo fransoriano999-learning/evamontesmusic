@@ -246,8 +246,10 @@ h3 {
 }
 
 .awards-grid,
-.video-grid {
-  grid-template-columns: 1fr;
+.video-grid {  
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
 }
 
 .card {
@@ -541,7 +543,6 @@ h3 {
   .contact-box {
     padding: 1.3rem;
   }
-
   .awards-grid,
   .video-grid {
     grid-template-columns: 1fr;
