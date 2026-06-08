@@ -108,6 +108,7 @@ img {
 
 .language-switcher {
   background: var(--surface);
+  background-color: #222;   /* COLOR DE FONDO */
   color: var(--text);
   border: 1px solid var(--border);
   border-radius: 999px;
