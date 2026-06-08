@@ -543,4 +543,10 @@ h3 {
   .contact-box {
     padding: 1.3rem;
   }
+
+  .awards-grid,
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+
 }
