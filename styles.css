@@ -221,6 +221,17 @@ h3 {
   aspect-ratio: 4 / 5;
 }
 
+/* Espacio inferior bajo la foto de biografía */
+.section-media:has(.image-biografia) {
+  padding-bottom: 1.5rem;
+}
+
+/* Fallback adicional para navegadores sin :has() */
+.image-biografia {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
 
 
 .section-heading.centered {

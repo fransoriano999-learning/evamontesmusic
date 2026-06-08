@@ -38,13 +38,13 @@
         "imageAlt": "Mil Descobreix 2025"
       },
       {
-        "title": "Premio de Piano “Maestro Alonso” Julio 2024 en El Escorial, Madrid",
+        "title": "Premio de Piano “Maestro Alonso” Julio 2024 en Segovia",
         "description": "Ganadora del primer premio de la Asociación Legado Maestro Alonso por la interpretación de “Pilarcita”.",
         "imageAlt": "Premio de Piano Maestro Alonso"
       },
       {
         "title": "Premiada Joves Creadors Liceu tres años consecutivos 2024, 2025 y 2026",
-        "description": "Participación y reconocimiento en el programa de jóvenes creadores vinculado al Liceu.",
+        "description": "Participación y reconocimiento en el programa de jóvenes creadores vinculado al Liceu de Barcelona.",
         "imageAlt": "Joves Creadors Liceu"
       },
       {
@@ -54,12 +54,12 @@
       },
       {
         "title": "Mención de honor Sant Anastasi 2026 en canto",
-        "description": "Reconocimiento honorífico en la especialidad de canto.",
+        "description": "Reconocimiento honorífico en la especialidad de canto lírico.",
         "imageAlt": "Sant Anastasi 2026"
       },
       {
         "title": "Primer puesto en la Academica International Studies Song Competition 2026",
-        "description": "Premio internacional por su interpretación vocal.",
+        "description": "Premio internacional por su composición y su interpretación vocal.",
         "imageAlt": "Academica International Studies Song Competition 2026"
       }
     ]
@@ -71,37 +71,37 @@
     "items": [
       {
         "title": "El nen valent - autora Eva Montes",
-        "description": "CCX - Centre Cultural de Xàtiva",
+        "description": "CCX - Centre Cultural de Xàtiva 2025",
         "link": "Ver vídeo",
         "imageAlt": "Miniatura del vídeo 01"
       },
       {
         "title": "Vittoria, mio core! (Giacomo Carissimi)",
-        "description": "Sant Anastasi 2026 - Teatro Enric Granados",
+        "description": "Sant Anastasi 2026 - Auditorio Enric Granados de Lleida",
         "link": "Ver vídeo",
         "imageAlt": "Miniatura del vídeo 02"
       },
       {
         "title": "Flames - autora Eva Montes",
-        "description": "Auditorio Fundació Conservatori Liceu",
+        "description": "Auditorio Fundació Conservatori Liceu de Barcelona 2024",
         "link": "Ver vídeo",
         "imageAlt": "Miniatura del vídeo 03"
       },
       {
-        "title": "Escriurem - cover by Eva Montes",
-        "description": "Teatro Escorxador Lleida",
+        "title": "Escriurem (Miki Núñez) - cover by Eva Montes",
+        "description": "Café del Teatre de Lleida 2025",
         "link": "Ver vídeo",
         "imageAlt": "Miniatura del vídeo 04"
       },
       {
-        "title": "I Wanna Be Me - cover by Eva Montes",
-        "description": "CCX - Centre Cultural de Xàtiva",
+        "title": "I Wanna Be Me - autora Eva Montes",
+        "description": "CCX - Centre Cultural de Xàtiva 2025",
         "link": "Ver vídeo",
         "imageAlt": "Miniatura del vídeo 05"
       },
       {
         "title": "Roxanne (Police) - cover by Eva Montes",
-        "description": "Tocata Pub Lleida",
+        "description": "Tocata Pub Lleida 2026",
         "link": "Ver vídeo",
         "imageAlt": "Miniatura del vídeo 06"
       }
