@@ -1,244 +1,265 @@
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title data-i18n="meta.title">Eva | Música, Biografía y Vídeos</title>
-<meta content="Web oficial de Eva: biografía, música, vídeos, eventos y contacto." data-i18n-content="meta.description" name="description"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="styles.css" rel="stylesheet"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="meta.title">Eva | Música, Biografía y Vídeos</title>
+  <meta name="description" content="Web oficial de Eva: biografía, música, vídeos, eventos y contacto." data-i18n-content="meta.description" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header class="site-header">
-<div class="container header-inner">
-<a class="brand" data-i18n-aria-label="header.homeAria" href="#inicio">
-<img alt="Logo Eva" class="brand-logo" data-i18n-alt="header.logoAlt" src="img/Logo_Basic.png"/>
-</a>
-<input class="nav-toggle" data-i18n-aria-label="header.openMenuAria" id="nav-toggle" type="checkbox"/>
-<label aria-hidden="true" class="nav-toggle-label" for="nav-toggle">
-<span></span><span></span><span></span>
-</label>
-<nav class="main-nav">
-<ul>
-<li><a data-i18n="nav.home" href="#inicio">Inicio</a></li>
-<li><a data-i18n="nav.biography" href="#biografia">Biografía</a></li>
-<li><a data-i18n="nav.videos" href="#videos">Vídeos</a></li>
-<li><a data-i18n="nav.events" href="#eventos">Eventos</a></li>
-<li><a data-i18n="nav.contact" href="#contacto">Contacto</a></li>
-</ul>
-</nav>
-<div class="language-switcher-wrap">
-<label class="visually-hidden" data-i18n="header.language" for="languageSwitcher">Idioma</label>
-<select aria-label="Selector de idioma" class="language-switcher" data-i18n-aria-label="header.languageAria" id="languageSwitcher">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" data-i18n-aria-label="header.homeAria">
+        <img src="img/Logo_Basic.png" alt="Logo Eva" class="brand-logo" data-i18n-alt="header.logoAlt" />
+      </a>
 
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" data-i18n-aria-label="header.openMenuAria" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
 
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#inicio" data-i18n="nav.home">Inicio</a></li>
+          <li><a href="#biografia" data-i18n="nav.biography">Biografía</a></li>
+          <li><a href="#videos" data-i18n="nav.videos">Vídeos</a></li>
+          <li><a href="#eventos" data-i18n="nav.events">Eventos</a></li>
+          <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
+        </ul>
+      </nav>
 
+      <div class="language-switcher-wrap">
+        <label for="languageSwitcher" class="visually-hidden" data-i18n="header.language">Idioma</label>
+        <select id="languageSwitcher" class="language-switcher" aria-label="Language selector">
+          <option value="es">Español</option>
+          <option value="en">English</option>
+          <option value="ca">Català</option>
+          <option value="fr">Français</option>
+        </select>
+      </div>
+    </div>
+  </header>
 
-<option data-i18n="languages.es" value="es">Español</option><option data-i18n="languages.en" value="en">English</option><option data-i18n="languages.ca" value="ca">Català</option><option data-i18n="languages.fr" value="fr">Français</option></select>
-</div>
-</div>
-</header>
-<main>
-<section class="section hero-section" id="inicio">
-<div class="container split-layout hero-layout">
-<div class="section-copy">
-<p class="eyebrow" data-i18n="hero.eyebrow">Interpretación · Creación · Voz</p>
-<h1 data-i18n="hero.title">Eva Montes</h1>
-<p class="lead" data-i18n="hero.lead">Una propuesta artística delicada, intensa y elegante, con una identidad contemporánea.</p>
-<div class="hero-actions">
-<a class="btn btn-primary" data-i18n="hero.listen" href="#videos">Escuchar</a>
-<a class="btn btn-secondary" data-i18n="hero.viewBiography" href="#biografia">Ver biografía</a>
-</div>
-</div>
-<div class="section-media">
-<img alt="Eva - imagen de inicio" class="section-image image-inicio" data-i18n-alt="hero.imageAlt" src="img/MilEva.webp"/>
-</div>
-</div>
-</section>
-<section class="section" id="biografia">
-<div class="container split-layout">
-<div class="section-copy">
-<p class="eyebrow" data-i18n="biography.eyebrow">Biografía</p>
-<h2 data-i18n="biography.title">Talento Precoz</h2>
-<p data-i18n="biography.description">Eva Montes inicia su formación musical a los 6 años con el violín, demostrando desde muy temprana edad un talento destacado que la lleva, a los 11 años, a comenzar a componer sus propias piezas. Su capacidad interpretativa sobresale tanto en violín como en piano, consolidándose como una joven música de gran versatilidad. A lo largo de su trayectoria ha formado parte de diversas formaciones orquestales de prestigio, como la Jove Orquestra de Ponent, la Orquestra Julià Carbonell, la Orquestra Simfònica Juvenil de Catalunya y la Orquestra En Clave de Arts, experiencias que han contribuido a su desarrollo artístico y escénico. En el ámbito creativo, ha sido reconocida durante tres años consecutivos con el premio de composición en el Certamen de Jóvenes Creadores del Liceu, consolidando su perfil como autora emergente. En 2025, su talento como cantautora fue también reconocido a nivel nacional al obtener el premio Mil Descobreix en Xàtiva. Además de su faceta instrumental y compositiva, cuenta con experiencia en el escenario interpretando sus propias canciones, explorando una amplia variedad de estilos que incluyen pop, rock, jazz y lírico, lo que refleja su gran sensibilidad artística y capacidad de adaptación.</p>
-</div>
-<div class="section-media">
-<img alt="Eva - fotografía biográfica" class="section-image image-biografia" data-i18n-alt="biography.imageAlt" src="img/JOP2025.jpg"/>
-</div>
-</div>
-<div class="container">
-<div class="cards-grid awards-grid">
-<article class="card award-card">
-<div class="award-icon"><img alt="Mil Descobreix 2025" data-i18n-alt="awards.items.0.imageAlt" src="img/EvaElPais.jpg"/></div>
-<div class="card-body">
-<h3 data-i18n="awards.items.0.title">Ganadora Mil Descobreix 2025 Xàtiva, Valencia</h3>
-<p data-i18n="awards.items.0.description">Reconocimiento destacado dentro del ámbito de jóvenes talentos.</p>
-<div class="link-stack">
-<a class="text-link" href="https://web.archive.org/web/20260217114819/https://cadenaser.com/comunitat-valenciana/2025/10/27/con-14-anos-eva-soriano-gana-el-mil-descobreix-de-xativa-radio-xativa/" rel="noopener noreferrer" target="_blank">Cadena SER</a>
-<a class="text-link" href="https://web.archive.org/web/20260606154609/https://www.segre.com/es/cultura/251028/una-cantautora-con-estrella_1000086.html" rel="noopener noreferrer" target="_blank">Segre</a>
-</div>
-</div>
-</article>
-<article class="card award-card">
-<div class="award-icon"><img alt="Premio de Piano Maestro Alonso" data-i18n-alt="awards.items.1.imageAlt" src="img/EvaPiano.jpg"/></div>
-<div class="card-body">
-<h3 data-i18n="awards.items.1.title">Premio de Piano “Maestro Alonso” Julio 2024 en Segovia</h3>
-<p data-i18n="awards.items.1.description">Ganadora del primer premio de la Asociación Legado Maestro Alonso por la interpretación de “Pilarcita”.</p>
-</div>
-</article>
-<article class="card award-card">
-<div class="award-icon"><img alt="Joves Creadors Liceu" data-i18n-alt="awards.items.2.imageAlt" src="img/LiceuJovesCreadors2024.jpg"/></div>
-<div class="card-body">
-<h3 data-i18n="awards.items.2.title">Premiada Joves Creadors Liceu tres años consecutivos 2024, 2025 y 2026</h3>
-<p data-i18n="awards.items.2.description">Participación y reconocimiento en el programa de jóvenes creadores vinculado al Liceu de Barcelona.</p>
-</div>
-</article>
-<article class="card award-card">
-<div class="award-icon"><img alt="Joves Interprets Musicals" data-i18n-alt="awards.items.3.imageAlt" src="img/JovesInterpretsAndorra.jpg"/></div>
-<div class="card-body">
-<h3 data-i18n="awards.items.3.title">Tercer premio por su interpretación en voz del concurso “Joves Interprets Musicals” de Andorra 2026</h3>
-<p data-i18n="awards.items.3.description">Reconocimiento obtenido en el concurso de jóvenes intérpretes musicales de Andorra.</p>
-</div>
-</article>
-<article class="card award-card">
-<div class="award-icon"><img alt="Sant Anastasi 2026" data-i18n-alt="awards.items.4.imageAlt" src="img/SantAnastasi2026.jpg"/></div>
-<div class="card-body">
-<h3 data-i18n="awards.items.4.title">Mención de honor Sant Anastasi 2026 en canto</h3>
-<p data-i18n="awards.items.4.description">Reconocimiento honorífico en la especialidad de canto lírico.</p>
-</div>
-</article>
-<article class="card award-card">
-<div class="award-icon"><img alt="Academica International Studies Song Competition 2026" data-i18n-alt="awards.items.5.imageAlt" src="img/DualDiploma.jpg"/></div>
-<div class="card-body">
-<h3 data-i18n="awards.items.5.title">Primer puesto en la Academica International Studies Song Competition 2026</h3>
-<p data-i18n="awards.items.5.description">Premio internacional por su composición y su interpretación vocal.</p>
-</div>
-</article>
-</div>
-</div>
-</section>
-<section class="section" id="videos">
-<div class="container">
-<div class="section-heading centered">
-<p class="eyebrow" data-i18n="videos.eyebrow">Vídeos</p>
-<h2 data-i18n="videos.title">Actuaciones</h2>
-<p data-i18n="videos.description">Un viaje a través del liricismo, el jazz, el pop o el rock</p>
-</div>
-<div class="cards-grid video-grid">
-<article class="card video-card">
-<div class="video-placeholder">
-<img alt="Miniatura del vídeo 01" class="video-thumb" data-i18n-alt="videos.items.0.imageAlt" src="img/ElNenValent.png"/>
-</div>
-<div class="card-body">
-<h3 data-i18n="videos.items.0.title">El nen valent - autora Eva Montes</h3>
-<p data-i18n="videos.items.0.description">CCX - Centre Cultural de Xàtiva 2025</p>
-<a class="text-link" data-i18n="videos.items.0.link" href="https://www.youtube.com/watch?v=7a9Z6WKMm64" rel="noopener noreferrer" target="_blank">Ver vídeo</a>
-</div>
-</article>
-<article class="card video-card">
-<div class="video-placeholder">
-<img alt="Miniatura del vídeo 02" class="video-thumb" data-i18n-alt="videos.items.1.imageAlt" src="img/SantAnastasi2026.jpg"/>
-</div>
-<div class="card-body">
-<h3 data-i18n="videos.items.1.title">Vittoria, mio core! (Giacomo Carissimi)</h3>
-<p data-i18n="videos.items.1.description">Sant Anastasi 2026 - Auditorio Enric Granados de Lleida</p>
-<a class="text-link" data-i18n="videos.items.1.link" href="https://www.youtube.com/watch?v=tL5kOetloaA" rel="noopener noreferrer" target="_blank">Ver vídeo</a>
-</div>
-</article>
-<article class="card video-card">
-<div class="video-placeholder">
-<img alt="Miniatura del vídeo 03" class="video-thumb" data-i18n-alt="videos.items.2.imageAlt" src="img/JovesCompositorsLiceu2025.png"/>
-</div>
-<div class="card-body">
-<h3 data-i18n="videos.items.2.title">Flames - autora Eva Montes</h3>
-<p data-i18n="videos.items.2.description">Auditorio Fundació Conservatori Liceu de Barcelona 2024</p>
-<a class="text-link" data-i18n="videos.items.2.link" href="https://www.youtube.com/watch?v=EC78d_lt96I" rel="noopener noreferrer" target="_blank">Ver vídeo</a>
-</div>
-</article>
-<article class="card video-card">
-<div class="video-placeholder">
-<img alt="Miniatura del vídeo 04" class="video-thumb" data-i18n-alt="videos.items.3.imageAlt" src="img/EscriuremSecundariaRock.png"/>
-</div>
-<div class="card-body">
-<h3 data-i18n="videos.items.3.title">Escriurem (Miki Núñez) - cover by Eva Montes</h3>
-<p data-i18n="videos.items.3.description">Café del Teatre de Lleida 2025</p>
-<a class="text-link" data-i18n="videos.items.3.link" href="https://www.youtube.com/watch?v=zaeXVDGkuiw" rel="noopener noreferrer" target="_blank">Ver vídeo</a>
-</div>
-</article>
-<article class="card video-card">
-<div class="video-placeholder">
-<img alt="Miniatura del vídeo 05" class="video-thumb" data-i18n-alt="videos.items.4.imageAlt" src="img/iWannaBeMe.png"/>
-</div>
-<div class="card-body">
-<h3 data-i18n="videos.items.4.title">I Wanna Be Me - autora Eva Montes</h3>
-<p data-i18n="videos.items.4.description">CCX - Centre Cultural de Xàtiva 2025</p>
-<a class="text-link" data-i18n="videos.items.4.link" href="https://www.youtube.com/watch?v=Hcypt7dstbk" rel="noopener noreferrer" target="_blank">Ver vídeo</a>
-</div>
-</article>
-<article class="card video-card">
-<div class="video-placeholder">
-<img alt="Miniatura del vídeo 06" class="video-thumb" data-i18n-alt="videos.items.5.imageAlt" src="img/Roxanne.png"/>
-</div>
-<div class="card-body">
-<h3 data-i18n="videos.items.5.title">Roxanne (Police) - cover by Eva Montes</h3>
-<p data-i18n="videos.items.5.description">Tocata Pub Lleida 2026</p>
-<a class="text-link" data-i18n="videos.items.5.link" href="https://www.youtube.com/watch?v=eWmUDNXI7bA" rel="noopener noreferrer" target="_blank">Ver vídeo</a>
-</div>
-</article>
-</div>
-</div>
-</section>
-<section class="section events-section" id="eventos">
-<div class="container">
-<div class="section-heading centered">
-<p class="eyebrow" data-i18n="events.eyebrow">Eventos</p>
-<h2 data-i18n="events.title">Próximos eventos</h2>
-<p data-i18n="events.description">Conciertos, concursos, actuaciones especiales y próximas citas artísticas.</p>
-</div>
-<div class="concert-list">
-<article class="concert-item">
-<div class="concert-date-block">
-<span class="concert-day" data-i18n="events.items.0.day">20</span>
-<span class="concert-month" data-i18n="events.items.0.month">Jun</span>
-</div>
-<div class="concert-info">
-<p class="concert-meta" data-i18n="events.items.0.meta">Lleida · 20 de junio · 12:30</p>
-<h3 data-i18n="events.items.0.title">Concierto acústico</h3>
-<p class="concert-venue" data-i18n="events.items.0.venue">Plaza de la Paeria</p>
-<p class="concert-description" data-i18n="events.items.0.description">Festival de Música al Carrer 2026</p>
-</div>
-<div class="concert-actions">
-<span class="concert-status" data-i18n="events.items.0.badge">Próximo mes</span>
-<a class="btn btn-secondary concert-link" data-i18n="events.items.0.link" href="#contacto">Acceso libre</a>
-</div>
-</article>
-</div>
-</div>
-</section>
-<section class="section contact-section" id="contacto">
-<div class="container contact-box">
-<div class="section-heading centered">
-<p class="eyebrow" data-i18n="contact.eyebrow">Contacto</p>
-<h2 data-i18n="contact.title">Hablemos</h2>
-<p data-i18n="contact.description">Para colaboraciones, conciertos, concursos, prensa o propuestas artísticas, puedes añadir aquí tus datos de contacto y redes.</p>
-</div>
-<div class="contact-links">
-<a class="btn btn-primary" data-i18n="contact.email" href="mailto:evasorianomusic@gmail.com">Enviar email</a>
-<a class="btn btn-secondary" data-i18n="contact.youtube" href="https://www.youtube.com/@EvaMontes-h8x" rel="noopener noreferrer" target="_blank">YouTube</a>
-<a class="btn btn-secondary" data-i18n="contact.instagram" href="https://www.instagram.com/evamontesmusic/" rel="noopener noreferrer" target="_blank">Instagram</a>
-</div>
-</div>
-</section>
-</main>
-<footer class="site-footer">
-<div class="container footer-inner">
-<p data-i18n="footer.rights">©2026 Eva. Todos los derechos de propiedad intelectual e industrial de este sitio web son titularidad de Eva Soriano.
-Queda prohibida su reproducción, distribución o uso sin autorización expresa.</p>
-</div>
-</footer>
-<script defer="" src="app.js"></script>
+  <main>
+    <section id="inicio" class="section hero-section">
+      <div class="container split-layout hero-layout">
+        <div class="section-copy">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Interpretación · Creación · Voz</p>
+          <h1 data-i18n="hero.title">Eva Montes</h1>
+          <p class="lead" data-i18n="hero.lead">Una propuesta artística delicada, intensa y elegante, con una identidad contemporánea.</p>
+          <div class="hero-actions">
+            <a href="#videos" class="btn btn-primary" data-i18n="hero.listen">Escuchar</a>
+            <a href="#biografia" class="btn btn-secondary" data-i18n="hero.viewBiography">Ver biografía</a>
+          </div>
+        </div>
+        <div class="section-media">
+          <img src="img/MilEva.webp" alt="Eva - imagen de inicio" class="section-image image-inicio" data-i18n-alt="hero.imageAlt" />
+        </div>
+      </div>
+    </section>
+
+    <section id="biografia" class="section">
+      <div class="container split-layout">
+        <div class="section-copy">
+          <p class="eyebrow" data-i18n="biography.eyebrow">Biografía</p>
+          <h2 data-i18n="biography.title">Talento Precoz</h2>
+          <p data-i18n="biography.description">Eva Montes inicia su formación musical a los 6 años con el violín, demostrando desde muy temprana edad un talento destacado que la lleva, a los 11 años, a comenzar a componer sus propias piezas. Su capacidad interpretativa sobresale tanto en violín como en piano, consolidándose como una joven música de gran versatilidad. A lo largo de su trayectoria ha formado parte de diversas formaciones orquestales de prestigio, como la Jove Orquestra de Ponent, la Orquestra Julià Carbonell, la Orquestra Simfònica Juvenil de Catalunya y la Orquestra En Clave de Arts, experiencias que han contribuido a su desarrollo artístico y escénico. En el ámbito creativo, ha sido reconocida durante tres años consecutivos con el premio de composición en el Certamen de Jóvenes Creadores del Liceu, consolidando su perfil como autora emergente. En 2025, su talento como cantautora fue también reconocido a nivel nacional al obtener el premio Mil Descobreix en Xàtiva. Además de su faceta instrumental y compositiva, cuenta con experiencia en el escenario interpretando sus propias canciones, explorando una amplia variedad de estilos que incluyen pop, rock, jazz y lírico, lo que refleja su gran sensibilidad artística y capacidad de adaptación.</p>
+        </div>
+        <div class="section-media">
+          <img src="img/JOP2025.jpg" alt="Eva - fotografía biográfica" class="section-image image-biografia" data-i18n-alt="biography.imageAlt" />
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cards-grid awards-grid">
+          <article class="card award-card">
+            <div class="award-icon"><img src="img/EvaElPais.jpg" alt="Mil Descobreix 2025" data-i18n-alt="awards.items.0.imageAlt" /></div>
+            <div class="card-body">
+              <h3 data-i18n="awards.items.0.title">Ganadora Mil Descobreix 2025 Xàtiva, Valencia</h3>
+              <p data-i18n="awards.items.0.description">Reconocimiento destacado dentro del ámbito de jóvenes talentos.</p>
+              <div class="link-stack">
+                <a href="https://web.archive.org/web/20260217114819/https://cadenaser.com/comunitat-valenciana/2025/10/27/con-14-anos-eva-soriano-gana-el-mil-descobreix-de-xativa-radio-xativa/" target="_blank" rel="noopener noreferrer" class="text-link">Cadena SER</a>
+                <a href="https://web.archive.org/web/20260606154609/https://www.segre.com/es/cultura/251028/una-cantautora-con-estrella_1000086.html" target="_blank" rel="noopener noreferrer" class="text-link">Segre</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card award-card">
+            <div class="award-icon"><img src="img/EvaPiano.jpg" alt="Premio de Piano Maestro Alonso" data-i18n-alt="awards.items.1.imageAlt" /></div>
+            <div class="card-body">
+              <h3 data-i18n="awards.items.1.title">Premio de Piano “Maestro Alonso” Julio 2024 en Segovia</h3>
+              <p data-i18n="awards.items.1.description">Ganadora del primer premio de la Asociación Legado Maestro Alonso por la interpretación de “Pilarcita”.</p>
+            </div>
+          </article>
+
+          <article class="card award-card">
+            <div class="award-icon"><img src="img/LiceuJovesCreadors2024.jpg" alt="Joves Creadors Liceu" data-i18n-alt="awards.items.2.imageAlt" /></div>
+            <div class="card-body">
+              <h3 data-i18n="awards.items.2.title">Premiada Joves Creadors Liceu tres años consecutivos 2024, 2025 y 2026</h3>
+              <p data-i18n="awards.items.2.description">Participación y reconocimiento en el programa de jóvenes creadores vinculado al Liceu de Barcelona.</p>
+            </div>
+          </article>
+
+          <article class="card award-card">
+            <div class="award-icon"><img src="img/JovesInterpretsAndorra.jpg" alt="Joves Interprets Musicals" data-i18n-alt="awards.items.3.imageAlt" /></div>
+            <div class="card-body">
+              <h3 data-i18n="awards.items.3.title">Tercer premio por su interpretación en voz del concurso “Joves Interprets Musicals” de Andorra 2026</h3>
+              <p data-i18n="awards.items.3.description">Reconocimiento obtenido en el concurso de jóvenes intérpretes musicales de Andorra.</p>
+            </div>
+          </article>
+
+          <article class="card award-card">
+            <div class="award-icon"><img src="img/SantAnastasi2026.jpg" alt="Sant Anastasi 2026" data-i18n-alt="awards.items.4.imageAlt" /></div>
+            <div class="card-body">
+              <h3 data-i18n="awards.items.4.title">Mención de honor Sant Anastasi 2026 en canto</h3>
+              <p data-i18n="awards.items.4.description">Reconocimiento honorífico en la especialidad de canto lírico.</p>
+            </div>
+          </article>
+
+          <article class="card award-card">
+            <div class="award-icon"><img src="img/DualDiploma.jpg" alt="Academica International Studies Song Competition 2026" data-i18n-alt="awards.items.5.imageAlt" /></div>
+            <div class="card-body">
+              <h3 data-i18n="awards.items.5.title">Primer puesto en la Academica International Studies Song Competition 2026</h3>
+              <p data-i18n="awards.items.5.description">Premio internacional por su composición y su interpretación vocal.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="videos" class="section">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="eyebrow" data-i18n="videos.eyebrow">Vídeos</p>
+          <h2 data-i18n="videos.title">Actuaciones</h2>
+          <p data-i18n="videos.description">Un viaje a través del liricismo, el jazz, el pop o el rock</p>
+        </div>
+
+        <div class="cards-grid video-grid">
+          <article class="card video-card">
+            <div class="video-placeholder">
+              <img src="img/ElNenValent.png" alt="Miniatura del vídeo 01" class="video-thumb" data-i18n-alt="videos.items.0.imageAlt" />
+            </div>
+            <div class="card-body">
+              <h3 data-i18n="videos.items.0.title">El nen valent - autora Eva Montes</h3>
+              <p data-i18n="videos.items.0.description">CCX - Centre Cultural de Xàtiva 2025</p>
+              <a href="https://www.youtube.com/watch?v=7a9Z6WKMm64" target="_blank" rel="noopener noreferrer" class="text-link" data-i18n="videos.items.0.link">Ver vídeo</a>
+            </div>
+          </article>
+
+          <article class="card video-card">
+            <div class="video-placeholder">
+              <img src="img/SantAnastasi2026.jpg" alt="Miniatura del vídeo 02" class="video-thumb" data-i18n-alt="videos.items.1.imageAlt" />
+            </div>
+            <div class="card-body">
+              <h3 data-i18n="videos.items.1.title">Vittoria, mio core! (Giacomo Carissimi)</h3>
+              <p data-i18n="videos.items.1.description">Sant Anastasi 2026 - Auditorio Enric Granados de Lleida</p>
+              <a href="https://www.youtube.com/watch?v=tL5kOetloaA" target="_blank" rel="noopener noreferrer" class="text-link" data-i18n="videos.items.1.link">Ver vídeo</a>
+            </div>
+          </article>
+
+          <article class="card video-card">
+            <div class="video-placeholder">
+              <img src="img/JovesCompositorsLiceu2025.png" alt="Miniatura del vídeo 03" class="video-thumb" data-i18n-alt="videos.items.2.imageAlt" />
+            </div>
+            <div class="card-body">
+              <h3 data-i18n="videos.items.2.title">Flames - autora Eva Montes</h3>
+              <p data-i18n="videos.items.2.description">Auditorio Fundació Conservatori Liceu de Barcelona 2024</p>
+              <a href="https://www.youtube.com/watch?v=EC78d_lt96I" target="_blank" rel="noopener noreferrer" class="text-link" data-i18n="videos.items.2.link">Ver vídeo</a>
+            </div>
+          </article>
+
+          <article class="card video-card">
+            <div class="video-placeholder">
+              <img src="img/EscriuremSecundariaRock.png" alt="Miniatura del vídeo 04" class="video-thumb" data-i18n-alt="videos.items.3.imageAlt" />
+            </div>
+            <div class="card-body">
+              <h3 data-i18n="videos.items.3.title">Escriurem (Miki Núñez) - cover by Eva Montes</h3>
+              <p data-i18n="videos.items.3.description">Café del Teatre de Lleida 2025</p>
+              <a href="https://www.youtube.com/watch?v=zaeXVDGkuiw" target="_blank" rel="noopener noreferrer" class="text-link" data-i18n="videos.items.3.link">Ver vídeo</a>
+            </div>
+          </article>
+
+          <article class="card video-card">
+            <div class="video-placeholder">
+              <img src="img/iWannaBeMe.png" alt="Miniatura del vídeo 05" class="video-thumb" data-i18n-alt="videos.items.4.imageAlt" />
+            </div>
+            <div class="card-body">
+              <h3 data-i18n="videos.items.4.title">I Wanna Be Me - autora Eva Montes</h3>
+              <p data-i18n="videos.items.4.description">CCX - Centre Cultural de Xàtiva 2025</p>
+              <a href="https://www.youtube.com/watch?v=Hcypt7dstbk" target="_blank" rel="noopener noreferrer" class="text-link" data-i18n="videos.items.4.link">Ver vídeo</a>
+            </div>
+          </article>
+
+          <article class="card video-card">
+            <div class="video-placeholder">
+              <img src="img/Roxanne.png" alt="Miniatura del vídeo 06" class="video-thumb" data-i18n-alt="videos.items.5.imageAlt" />
+            </div>
+            <div class="card-body">
+              <h3 data-i18n="videos.items.5.title">Roxanne (Police) - cover by Eva Montes</h3>
+              <p data-i18n="videos.items.5.description">Tocata Pub Lleida 2026</p>
+              <a href="https://www.youtube.com/watch?v=eWmUDNXI7bA" target="_blank" rel="noopener noreferrer" class="text-link" data-i18n="videos.items.5.link">Ver vídeo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="eventos" class="section events-section">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="eyebrow" data-i18n="events.eyebrow">Eventos</p>
+          <h2 data-i18n="events.title">Próximos eventos</h2>
+          <p data-i18n="events.description">Conciertos, concursos, actuaciones especiales y próximas citas artísticas.</p>
+        </div>
+
+        <div class="concert-list">
+          <article class="concert-item">
+            <div class="concert-date-block">
+              <span class="concert-day" data-i18n="events.items.0.day">20</span>
+              <span class="concert-month" data-i18n="events.items.0.month">Jun</span>
+            </div>
+            <div class="concert-info">
+              <p class="concert-meta" data-i18n="events.items.0.meta">Lleida · 20 de junio · 12:30</p>
+              <h3 data-i18n="events.items.0.title">Concierto acústico</h3>
+              <p class="concert-venue" data-i18n="events.items.0.venue">Plaza de la Paeria</p>
+              <p class="concert-description" data-i18n="events.items.0.description">Festival de Música al Carrer 2026</p>
+            </div>
+            <div class="concert-actions">
+              <span class="concert-status" data-i18n="events.items.0.badge">Próximo mes</span>
+              <a href="#contacto" class="btn btn-secondary concert-link" data-i18n="events.items.0.link">Acceso libre</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section contact-section">
+      <div class="container contact-box">
+        <div class="section-heading centered">
+          <p class="eyebrow" data-i18n="contact.eyebrow">Contacto</p>
+          <h2 data-i18n="contact.title">Hablemos</h2>
+          <p data-i18n="contact.description">Para colaboraciones, conciertos, concursos, prensa o propuestas artísticas, puedes añadir aquí tus datos de contacto y redes.</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:evasorianomusic@gmail.com" class="btn btn-primary" data-i18n="contact.email">Enviar email</a>
+          <a href="https://www.youtube.com/@EvaMontes-h8x" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-i18n="contact.youtube">YouTube</a>
+          <a href="https://www.instagram.com/evamontesmusic/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-i18n="contact.instagram">Instagram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p data-i18n="footer.rights">© 2026 Eva. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>

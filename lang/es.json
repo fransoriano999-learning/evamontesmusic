@@ -1,145 +1,86 @@
 {
-  "meta": {
-    "title": "Eva | Música, Biografía y Vídeos",
-    "description": "Web oficial de Eva: biografía, música, vídeos, eventos y contacto."
-  },
-  "nav": {
-    "home": "Inicio",
-    "biography": "Biografía",
-    "videos": "Vídeos",
-    "events": "Eventos",
-    "contact": "Contacto"
-  },
-  "header": {
-    "language": "Idioma",
-    "logoAlt": "Logo Eva",
-    "homeAria": "Homearia",
-    "openMenuAria": "Openmenuaria",
-    "languageAria": "Selector de idioma"
-  },
-  "languages": {
-    "es": "Español",
-    "en": "English",
-    "ca": "Català",
-    "fr": "Français"
-  },
-  "hero": {
-    "eyebrow": "Interpretación · Creación · Voz",
-    "title": "Eva Montes",
-    "lead": "Una propuesta artística delicada, intensa y elegante, con una identidad contemporánea.",
-    "listen": "Escuchar",
-    "viewBiography": "Ver biografía",
-    "imageAlt": "Eva - imagen de inicio"
-  },
-  "biography": {
-    "eyebrow": "Biografía",
-    "title": "Talento Precoz",
-    "description": "Eva Montes inicia su formación musical a los 6 años con el violín, demostrando desde muy temprana edad un talento destacado que la lleva, a los 11 años, a comenzar a componer sus propias piezas. Su capacidad interpretativa sobresale tanto en violín como en piano, consolidándose como una joven música de gran versatilidad. A lo largo de su trayectoria ha formado parte de diversas formaciones orquestales de prestigio, como la Jove Orquestra de Ponent, la Orquestra Julià Carbonell, la Orquestra Simfònica Juvenil de Catalunya y la Orquestra En Clave de Arts, experiencias que han contribuido a su desarrollo artístico y escénico. En el ámbito creativo, ha sido reconocida durante tres años consecutivos con el premio de composición en el Certamen de Jóvenes Creadores del Liceu, consolidando su perfil como autora emergente. En 2025, su talento como cantautora fue también reconocido a nivel nacional al obtener el premio Mil Descobreix en Xàtiva. Además de su faceta instrumental y compositiva, cuenta con experiencia en el escenario interpretando sus propias canciones, explorando una amplia variedad de estilos que incluyen pop, rock, jazz y lírico, lo que refleja su gran sensibilidad artística y capacidad de adaptación.",
-    "imageAlt": "Eva - fotografía biográfica"
-  },
-  "awards": {
-    "items": {
-      "0": {
-        "title": "Ganadora Mil Descobreix 2025 Xàtiva, Valencia",
-        "description": "Reconocimiento destacado dentro del ámbito de jóvenes talentos.",
-        "imageAlt": "Mil Descobreix 2025"
-      },
-      "1": {
-        "title": "Premio de Piano “Maestro Alonso” Julio 2024 en Segovia",
-        "description": "Ganadora del primer premio de la Asociación Legado Maestro Alonso por la interpretación de “Pilarcita”.",
-        "imageAlt": "Premio de Piano Maestro Alonso"
-      },
-      "2": {
-        "title": "Premiada Joves Creadors Liceu tres años consecutivos 2024, 2025 y 2026",
-        "description": "Participación y reconocimiento en el programa de jóvenes creadores vinculado al Liceu de Barcelona.",
-        "imageAlt": "Joves Creadors Liceu"
-      },
-      "3": {
-        "title": "Tercer premio por su interpretación en voz del concurso “Joves Interprets Musicals” de Andorra 2026",
-        "description": "Reconocimiento obtenido en el concurso de jóvenes intérpretes musicales de Andorra.",
-        "imageAlt": "Joves Interprets Musicals"
-      },
-      "4": {
-        "title": "Mención de honor Sant Anastasi 2026 en canto",
-        "description": "Reconocimiento honorífico en la especialidad de canto lírico.",
-        "imageAlt": "Sant Anastasi 2026"
-      },
-      "5": {
-        "title": "Primer puesto en la Academica International Studies Song Competition 2026",
-        "description": "Premio internacional por su composición y su interpretación vocal.",
-        "imageAlt": "Academica International Studies Song Competition 2026"
-      }
-    }
-  },
-  "videos": {
-    "eyebrow": "Vídeos",
-    "title": "Actuaciones",
-    "description": "Un viaje a través del liricismo, el jazz, el pop o el rock",
-    "items": {
-      "0": {
-        "title": "El nen valent - autora Eva Montes",
-        "description": "CCX - Centre Cultural de Xàtiva 2025",
-        "link": "Ver vídeo",
-        "imageAlt": "Miniatura del vídeo 01"
-      },
-      "1": {
-        "title": "Vittoria, mio core! (Giacomo Carissimi)",
-        "description": "Sant Anastasi 2026 - Auditorio Enric Granados de Lleida",
-        "link": "Ver vídeo",
-        "imageAlt": "Miniatura del vídeo 02"
-      },
-      "2": {
-        "title": "Flames - autora Eva Montes",
-        "description": "Auditorio Fundació Conservatori Liceu de Barcelona 2024",
-        "link": "Ver vídeo",
-        "imageAlt": "Miniatura del vídeo 03"
-      },
-      "3": {
-        "title": "Escriurem (Miki Núñez) - cover by Eva Montes",
-        "description": "Café del Teatre de Lleida 2025",
-        "link": "Ver vídeo",
-        "imageAlt": "Miniatura del vídeo 04"
-      },
-      "4": {
-        "title": "I Wanna Be Me - autora Eva Montes",
-        "description": "CCX - Centre Cultural de Xàtiva 2025",
-        "link": "Ver vídeo",
-        "imageAlt": "Miniatura del vídeo 05"
-      },
-      "5": {
-        "title": "Roxanne (Police) - cover by Eva Montes",
-        "description": "Tocata Pub Lleida 2026",
-        "link": "Ver vídeo",
-        "imageAlt": "Miniatura del vídeo 06"
-      }
-    }
-  },
-  "events": {
-    "eyebrow": "Eventos",
-    "title": "Próximos eventos",
-    "description": "Conciertos, concursos, actuaciones especiales y próximas citas artísticas.",
-    "items": {
-      "0": {
-        "day": "20",
-        "month": "Jun",
-        "meta": "Lleida · 20 de junio · 12:30",
-        "title": "Concierto acústico",
-        "venue": "Plaza de la Paeria",
-        "description": "Festival de Música al Carrer 2026",
-        "badge": "Próximo mes",
-        "link": "Acceso libre"
-      }
-    }
-  },
-  "contact": {
-    "eyebrow": "Contacto",
-    "title": "Hablemos",
-    "description": "Para colaboraciones, conciertos, concursos, prensa o propuestas artísticas, puedes añadir aquí tus datos de contacto y redes.",
-    "email": "Enviar email",
-    "youtube": "YouTube",
-    "instagram": "Instagram"
-  },
-  "footer": {
-    "rights": "©2026 Eva. Todos los derechos de propiedad intelectual e industrial de este sitio web son titularidad de Eva Soriano. Queda prohibida su reproducción, distribución o uso sin autorización expresa."
-  }
+  "meta.title": "Eva | Música, Biografía y Vídeos",
+  "meta.description": "Web oficial de Eva: biografía, música, vídeos, eventos y contacto.",
+  "header.homeAria": "Ir al inicio",
+  "header.logoAlt": "Logo Eva",
+  "header.openMenuAria": "Abrir menú de navegación",
+  "nav.home": "Inicio",
+  "nav.biography": "Biografía",
+  "nav.videos": "Vídeos",
+  "nav.events": "Eventos",
+  "nav.contact": "Contacto",
+  "header.language": "Idioma",
+  "hero.eyebrow": "Interpretación · Creación · Voz",
+  "hero.title": "Eva Montes",
+  "hero.lead": "Una propuesta artística delicada, intensa y elegante, con una identidad contemporánea.",
+  "hero.listen": "Escuchar",
+  "hero.viewBiography": "Ver biografía",
+  "hero.imageAlt": "Eva - imagen de inicio",
+  "biography.eyebrow": "Biografía",
+  "biography.title": "Talento Precoz",
+  "biography.description": "Eva Montes inicia su formación musical a los 6 años con el violín, demostrando desde muy temprana edad un talento destacado que la lleva, a los 11 años, a comenzar a componer sus propias piezas. Su capacidad interpretativa sobresale tanto en violín como en piano, consolidándose como una joven música de gran versatilidad. A lo largo de su trayectoria ha formado parte de diversas formaciones orquestales de prestigio, como la Jove Orquestra de Ponent, la Orquestra Julià Carbonell, la Orquestra Simfònica Juvenil de Catalunya y la Orquestra En Clave de Arts, experiencias que han contribuido a su desarrollo artístico y escénico. En el ámbito creativo, ha sido reconocida durante tres años consecutivos con el premio de composición en el Certamen de Jóvenes Creadores del Liceu, consolidando su perfil como autora emergente. En 2025, su talento como cantautora fue también reconocido a nivel nacional al obtener el premio Mil Descobreix en Xàtiva. Además de su faceta instrumental y compositiva, cuenta con experiencia en el escenario interpretando sus propias canciones, explorando una amplia variedad de estilos que incluyen pop, rock, jazz y lírico, lo que refleja su gran sensibilidad artística y capacidad de adaptación.",
+  "biography.imageAlt": "Eva - fotografía biográfica",
+  "awards.items.0.imageAlt": "Mil Descobreix 2025",
+  "awards.items.0.title": "Ganadora Mil Descobreix 2025 Xàtiva, Valencia",
+  "awards.items.0.description": "Reconocimiento destacado dentro del ámbito de jóvenes talentos.",
+  "awards.items.1.imageAlt": "Premio de Piano Maestro Alonso",
+  "awards.items.1.title": "Premio de Piano “Maestro Alonso” Julio 2024 en Segovia",
+  "awards.items.1.description": "Ganadora del primer premio de la Asociación Legado Maestro Alonso por la interpretación de “Pilarcita”.",
+  "awards.items.2.imageAlt": "Joves Creadors Liceu",
+  "awards.items.2.title": "Premiada Joves Creadors Liceu tres años consecutivos 2024, 2025 y 2026",
+  "awards.items.2.description": "Participación y reconocimiento en el programa de jóvenes creadores vinculado al Liceu de Barcelona.",
+  "awards.items.3.imageAlt": "Joves Interprets Musicals",
+  "awards.items.3.title": "Tercer premio por su interpretación en voz del concurso “Joves Interprets Musicals” de Andorra 2026",
+  "awards.items.3.description": "Reconocimiento obtenido en el concurso de jóvenes intérpretes musicales de Andorra.",
+  "awards.items.4.imageAlt": "Sant Anastasi 2026",
+  "awards.items.4.title": "Mención de honor Sant Anastasi 2026 en canto",
+  "awards.items.4.description": "Reconocimiento honorífico en la especialidad de canto lírico.",
+  "awards.items.5.imageAlt": "Academica International Studies Song Competition 2026",
+  "awards.items.5.title": "Primer puesto en la Academica International Studies Song Competition 2026",
+  "awards.items.5.description": "Premio internacional por su composición y su interpretación vocal.",
+  "videos.eyebrow": "Vídeos",
+  "videos.title": "Actuaciones",
+  "videos.description": "Un viaje a través del liricismo, el jazz, el pop o el rock",
+  "videos.items.0.imageAlt": "Miniatura del vídeo 01",
+  "videos.items.0.title": "El nen valent - autora Eva Montes",
+  "videos.items.0.description": "CCX - Centre Cultural de Xàtiva 2025",
+  "videos.items.0.link": "Ver vídeo",
+  "videos.items.1.imageAlt": "Miniatura del vídeo 02",
+  "videos.items.1.title": "Vittoria, mio core! (Giacomo Carissimi)",
+  "videos.items.1.description": "Sant Anastasi 2026 - Auditorio Enric Granados de Lleida",
+  "videos.items.1.link": "Ver vídeo",
+  "videos.items.2.imageAlt": "Miniatura del vídeo 03",
+  "videos.items.2.title": "Flames - autora Eva Montes",
+  "videos.items.2.description": "Auditorio Fundació Conservatori Liceu de Barcelona 2024",
+  "videos.items.2.link": "Ver vídeo",
+  "videos.items.3.imageAlt": "Miniatura del vídeo 04",
+  "videos.items.3.title": "Escriurem (Miki Núñez) - cover by Eva Montes",
+  "videos.items.3.description": "Café del Teatre de Lleida 2025",
+  "videos.items.3.link": "Ver vídeo",
+  "videos.items.4.imageAlt": "Miniatura del vídeo 05",
+  "videos.items.4.title": "I Wanna Be Me - autora Eva Montes",
+  "videos.items.4.description": "CCX - Centre Cultural de Xàtiva 2025",
+  "videos.items.4.link": "Ver vídeo",
+  "videos.items.5.imageAlt": "Miniatura del vídeo 06",
+  "videos.items.5.title": "Roxanne (Police) - cover by Eva Montes",
+  "videos.items.5.description": "Tocata Pub Lleida 2026",
+  "videos.items.5.link": "Ver vídeo",
+  "events.eyebrow": "Eventos",
+  "events.title": "Próximos eventos",
+  "events.description": "Conciertos, concursos, actuaciones especiales y próximas citas artísticas.",
+  "events.items.0.day": "20",
+  "events.items.0.month": "Jun",
+  "events.items.0.meta": "Lleida · 20 de junio · 12:30",
+  "events.items.0.title": "Concierto acústico",
+  "events.items.0.venue": "Plaza de la Paeria",
+  "events.items.0.description": "Festival de Música al Carrer 2026",
+  "events.items.0.badge": "Próximo mes",
+  "events.items.0.link": "Acceso libre",
+  "contact.eyebrow": "Contacto",
+  "contact.title": "Hablemos",
+  "contact.description": "Para colaboraciones, conciertos, concursos, prensa o propuestas artísticas, puedes añadir aquí tus datos de contacto y redes.",
+  "contact.email": "Enviar email",
+  "contact.youtube": "YouTube",
+  "contact.instagram": "Instagram",
+  "footer.rights": "© 2026 Eva. Todos los derechos reservados."
 }

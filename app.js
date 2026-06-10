@@ -1,114 +1,75 @@
-// app.js - aligned package version
-(() => {
-  const SUPPORTED_LANGS = ['es', 'ca', 'en', 'fr'];
-  const DEFAULT_LANG = 'es';
-  const STORAGE_KEY = 'site-language';
-  const SELECTOR_ID = 'languageSwitcher';
-  const ATTR_MAP = [
-    ['data-i18n', null],
-    ['data-i18n-alt', 'alt'],
-    ['data-i18n-title', 'title'],
-    ['data-i18n-placeholder', 'placeholder'],
-    ['data-i18n-aria-label', 'aria-label'],
-    ['data-i18n-content', 'content'],
-    ['data-i18n-href', 'href'],
-    ['data-i18n-value', 'value']
-  ];
+const DEFAULT_LANG = "es";
+const SUPPORTED_LANGS = ["es", "en", "ca", "fr"];
 
-  const cache = {};
+function getTranslation(translations, key) {
+  return translations[key];
+}
 
-  function getByPath(obj, path) {
-    if (!obj || !path) return undefined;
-    return path.split('.').reduce((acc, part) => (acc !== undefined && acc !== null) ? acc[part] : undefined, obj);
-  }
+async function loadLanguage(lang) {
+  const selectedLang = SUPPORTED_LANGS.includes(lang) ? lang : DEFAULT_LANG;
+  const response = await fetch(`lang/${selectedLang}.json`, { cache: "no-cache" });
+  if (!response.ok) throw new Error(`Could not load lang/${selectedLang}.json`);
+  return response.json();
+}
 
-  function normalizeLang(lang) {
-    const short = String(lang || '').toLowerCase().split('-')[0];
-    return SUPPORTED_LANGS.includes(short) ? short : DEFAULT_LANG;
-  }
+function applyTranslations(translations, selectedLang) {
+  document.documentElement.lang = selectedLang;
 
-  async function loadLanguage(lang) {
-    const current = normalizeLang(lang);
-    if (cache[current]) return cache[current];
-    const response = await fetch(`./${current}.json`, { cache: 'no-cache' });
-    if (!response.ok) {
-      throw new Error(`Cannot load ${current}.json (${response.status})`);
-    }
-    const data = await response.json();
-    cache[current] = data;
-    return data;
-  }
-
-  function applyTranslation(dict, fallbackDict) {
-    ATTR_MAP.forEach(([dataAttr, targetAttr]) => {
-      document.querySelectorAll(`[${dataAttr}]`).forEach(el => {
-        const key = el.getAttribute(dataAttr);
-        let value = getByPath(dict, key);
-        if (value === undefined && fallbackDict) {
-          value = getByPath(fallbackDict, key);
-        }
-        if (typeof value !== 'string') return;
-
-        if (targetAttr === null) {
-          el.textContent = value;
-        } else {
-          el.setAttribute(targetAttr, value);
-        }
-      });
-    });
-
-    const pageTitle = getByPath(dict, 'meta.title') || (fallbackDict && getByPath(fallbackDict, 'meta.title'));
-    if (typeof pageTitle === 'string' && pageTitle.trim()) {
-      document.title = pageTitle;
-    }
-
-    const htmlLang = document.documentElement;
-    if (htmlLang) {
-      htmlLang.lang = normalizeLang(localStorage.getItem(STORAGE_KEY) || DEFAULT_LANG);
-    }
-  }
-
-  function getPreferredLanguage() {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    if (saved) return normalizeLang(saved);
-    return normalizeLang(navigator.language || DEFAULT_LANG);
-  }
-
-  async function setLanguage(lang) {
-    const current = normalizeLang(lang);
-    const [dict, fallbackDict] = await Promise.all([
-      loadLanguage(current),
-      current === DEFAULT_LANG ? Promise.resolve(null) : loadLanguage(DEFAULT_LANG)
-    ]);
-    applyTranslation(dict, fallbackDict);
-    localStorage.setItem(STORAGE_KEY, current);
-    document.documentElement.lang = current;
-    const selector = document.getElementById(SELECTOR_ID);
-    if (selector) selector.value = current;
-    return current;
-  }
-
-  document.addEventListener('DOMContentLoaded', async () => {
-    const selector = document.getElementById(SELECTOR_ID);
-    if (selector) {
-      selector.addEventListener('change', event => {
-        setLanguage(event.target.value).catch(error => console.error('Language switch error:', error));
-      });
-    }
-
-    try {
-      await setLanguage(getPreferredLanguage());
-    } catch (error) {
-      console.error('i18n initialization failed:', error);
-      if (DEFAULT_LANG !== 'es') {
-        try { await setLanguage('es'); } catch (_) {}
+  document.querySelectorAll('[data-i18n]').forEach((element) => {
+    const key = element.dataset.i18n;
+    const value = getTranslation(translations, key);
+    if (typeof value === 'string') {
+      if (element.tagName.toLowerCase() === 'title') {
+        document.title = value;
+      } else {
+        element.textContent = value;
       }
     }
   });
 
-  window.i18n = {
-    setLanguage,
-    loadLanguage,
-    normalizeLang
-  };
-})();
+  document.querySelectorAll('[data-i18n-alt]').forEach((element) => {
+    const value = getTranslation(translations, element.dataset.i18nAlt);
+    if (typeof value === 'string') element.setAttribute('alt', value);
+  });
+
+  document.querySelectorAll('[data-i18n-content]').forEach((element) => {
+    const value = getTranslation(translations, element.dataset.i18nContent);
+    if (typeof value === 'string') element.setAttribute('content', value);
+  });
+
+  document.querySelectorAll('[data-i18n-aria-label]').forEach((element) => {
+    const value = getTranslation(translations, element.dataset.i18nAriaLabel);
+    if (typeof value === 'string') element.setAttribute('aria-label', value);
+  });
+}
+
+async function setLanguage(lang) {
+  try {
+    const translations = await loadLanguage(lang);
+    applyTranslations(translations, lang);
+    localStorage.setItem('preferredLanguage', lang);
+
+    const selector = document.getElementById('languageSwitcher');
+    if (selector) selector.value = lang;
+  } catch (error) {
+    console.error('Language loading error:', error);
+    if (lang !== DEFAULT_LANG) await setLanguage(DEFAULT_LANG);
+  }
+}
+
+function initLanguageSwitcher() {
+  const selector = document.getElementById('languageSwitcher');
+  const browserLang = (navigator.language || DEFAULT_LANG).slice(0, 2).toLowerCase();
+  const savedLang = localStorage.getItem('preferredLanguage');
+  const initialLang = SUPPORTED_LANGS.includes(savedLang)
+    ? savedLang
+    : (SUPPORTED_LANGS.includes(browserLang) ? browserLang : DEFAULT_LANG);
+
+  if (selector) {
+    selector.addEventListener('change', (event) => setLanguage(event.target.value));
+  }
+
+  setLanguage(initialLang);
+}
+
+document.addEventListener('DOMContentLoaded', initLanguageSwitcher);
