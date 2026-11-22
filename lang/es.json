@@ -76,7 +76,7 @@
   "events.items.0.venue": "Las criaturas de Prometeo, con la Orquesta Julià Carbonell de les Terres de Lleida",
   "events.items.0.description": "Convocatoria Academia OJC 2027",
   "events.items.0.badge": "Próximamente",
-  "events.items.0.link": "Acceso libre",
+  "events.items.0.link": "Acceso con entrada",
 
   "events.items.1.day": "20",
   "events.items.1.month": "Dic",
@@ -96,14 +96,14 @@
   "events.items.2.badge": "Próximamente",
   "events.items.2.link": "Acceso libre",
 
- "events.items.3.day": "15",
+  "events.items.3.day": "15",
   "events.items.3.month": "Nov",
   "events.items.3.meta": "Teatre Auditori de Granollers · Sala Gran · domingo 15 de noviembre · 18:00",
   "events.items.3.title": "Concierto JONC, música clásica y sinfónico-coral",
   "events.items.3.venue": "Nigra sum, con el Cor Jove Amics de la Unió y la Jove Orquestra Nacional de Catalunya",
   "events.items.3.description": "Temporada 2025/2026 Granollers",
   "events.items.3.badge": "Próximamente",
-  "events.items.3.link": "Acceso libre",
+  "events.items.3.link": "Acceso con entrada",
 
   
   "contact.eyebrow": "Contacto",

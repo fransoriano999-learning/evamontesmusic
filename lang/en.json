@@ -95,7 +95,7 @@
   "events.items.2.badge": "Próximamente",
   "events.items.2.link": "Acceso libre",
 
- "events.items.3.day": "15",
+  "events.items.3.day": "15",
   "events.items.3.month": "Nov",
   "events.items.3.meta": "Teatre Auditori de Granollers · Sala Gran · domingo 15 de noviembre · 18:00",
   "events.items.3.title": "Concierto JONC, música clásica y sinfónico-coral",
@@ -103,6 +103,7 @@
   "events.items.3.description": "Temporada 2025/2026 Granollers",
   "events.items.3.badge": "Próximamente",
   "events.items.3.link": "Acceso libre",
+
   "contact.eyebrow": "Contact",
   "contact.title": "Let's talk",
   "contact.description": "For collaborations, concerts, competitions, press or artistic proposals, you can add your contact details and social media here.",

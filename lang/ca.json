@@ -76,7 +76,7 @@
   "events.items.0.venue": "Les criatures de Prometeu, amb l'Orquestra Julià Carbonell de les Terres de Lleida",
   "events.items.0.description": "Convocatòria Acadèmia OJC 2027",
   "events.items.0.badge": "Pròximament",
-  "events.items.0.link": "Accés lliure",
+  "events.items.0.link": "Amb entrada",
 
   "events.items.1.day": "20",
   "events.items.1.month": "Des",
@@ -103,7 +103,7 @@
   "events.items.3.venue": "Nigra sum, amb el Cor Jove Amics de la Unió i la Jove Orquestra Nacional de Catalunya",
   "events.items.3.description": "Temporada 2026/2027 Granollers",
   "events.items.3.badge": "Pròximament",
-  "events.items.3.link": "Accés lliure",
+  "events.items.3.link": "Amb entrada",
 
   "contact.eyebrow": "Contacte",
   "contact.title": "Parlem",
